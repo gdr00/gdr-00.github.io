@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.kalam {
+    font-family: 'Kalam', cursive;
+}
+
+.pacifico {
+    font-family: 'Pacifico', cursive;
+}
+
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Kalam', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto', sans-serif;
+    background: #222;
+    color: #fff;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    display: flex;
+    width: 100%;
+    height: 60;
+    background: rgba(0, 0, 0, 0.65);
+
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f1f1f1;
+}
+
+.navbar ul li a:hover{
+    color: #007cb0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    justify-content: center; /*centra il contenuto nella sezione*/
+    width: 100vw;
+    height: 100vh; /*fa in modo che ogni sezione in qualsiasi browser size occupi tutta la schermata*/
+    scroll-snap-align: center;
+}
+
+section h1 {
+    font-size: calc(20px + 0.5vw);
+    text-align: center;
+    margin: 1vmin;
+}
+
+section h2 {
+    font-size: calc(16px + 0.5vw);
+    text-align: center;
+    margin: 0.5rem 0rem;
+}
+
+section p {
+    font-size: calc(12px + 0.5vw);
+    margin: 0.14vh 5vw;
+    padding: 0vmin;
+    font-family: 'Kalam', cursive;
+}
+
+section ul{
+    font-size: calc(12px + 0.5vw);
+    margin: 0px 10vw;
+    padding: 0vmin;
+    font-family: 'Kalam', cursive;
+}
+
+section a:link {
+    color: #007cb0;
+}
+
+section a:visited{
+    color: #00aaff;
+}
+
+section#home {
+    background: url(https://source.unsplash.com/Q1p7bh3SHj8/1600x900) no-repeat center center/cover;
+}
+
+section#home p {
+    align-items: center;
+    text-align: center;
+}
+
+section#who-i-am {
+    background: url(https://source.unsplash.com/pfR18JNEMv8/1600x900) no-repeat center center/cover;
+}
+
+section#interests {
+    background: url(https://source.unsplash.com/Q1p7bh3SHj8/1600x900) no-repeat center center/cover;
+}
+
+section#projects {
+    background: url(https://source.unsplash.com/Q1p7bh3SHj8/1600x900) no-repeat center center/cover;
+}
+
+section#contact {
+    background: url(https://source.unsplash.com/Q1p7bh3SHj8/1600x900) no-repeat center center/cover;
+    scroll-snap-align: center;
+}
+
+footer {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.35);
+    height: 8vh;
+    width: 100vw;
+    padding-top: 0vh;
+}
+
+.footer-contnent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+p#designed-by {
+    padding: 0vh 0rem;
+    font-size: 1vh;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vh 0 1vh 0; /*margin 1rem top 1rem bottom*/
+}
+
+.socials li{
+    margin: 0 2rem; /*margine di 1rem a dx e sx*/
+}
+
+.socials a{
+    text-decoration: none;
+    color: #007cb0;
+    padding: 1vh;
+}
+
+.socials a i{
+    font-size: 2vh;
+}
+
+.socials a:hover i{
+    color: #fff;
+}
