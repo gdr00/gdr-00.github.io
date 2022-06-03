@@ -100,7 +100,7 @@ section p {
 
 section ul{
     font-size: calc(12px + 0.5vw);
-    margin: 0px 10vw;
+    margin: 0vw 10vw;
     padding: 0vmin;
     font-family: 'Kalam', cursive;
 }
