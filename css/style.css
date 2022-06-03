@@ -230,13 +230,13 @@ p#designed-by {
         font-size: 12px;
         margin: 0.14vh 5vw;
         padding: 0vmin;
-        font-family: 'Kalam', cursive;
+        font-family: 'Roboto', sans-serif;
     }
 
     section ul{
         font-size: 12px;
         margin: 0vw 10vw;
         padding: 0vmin;
-        font-family: 'Kalam', cursive;
+        font-family: 'Roboto', sans-serif;
     }
 }
