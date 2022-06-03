@@ -113,7 +113,8 @@ section a:visited{
 }
 
 section#home {
-    background: url(https://source.unsplash.com/Q1p7bh3SHj8/1600x900) no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)),url(https://source.unsplash.com/wQLAGv4_OYs/1600x900) no-repeat center center/cover; /*Q1p7bh3SHj8*/
 }
 
 section#home p {
@@ -130,11 +131,11 @@ section#interests {
 }
 
 section#projects {
-    background: url(https://source.unsplash.com/Q1p7bh3SHj8/1600x900) no-repeat center center/cover;
+    background: url(https://source.unsplash.com/qtRF_RxCAo0/1600x900) no-repeat center center/cover; /*_8hGFBxWD0A*/
 }
 
 section#contact {
-    background: url(https://source.unsplash.com/Q1p7bh3SHj8/1600x900) no-repeat center center/cover;
+    background: url(https://source.unsplash.com/6SbFGnQTE8s/1600x900) no-repeat center center/cover;
     scroll-snap-align: center;
 }
 
