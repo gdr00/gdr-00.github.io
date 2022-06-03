@@ -54,8 +54,8 @@ body {
 }
 
 .navbar ul li {
-    margin: 0 1rem;
-    padding: 1rem;
+    margin: 0 .4vw;
+    padding: .4vw;
 }
 
 .navbar ul li a {
@@ -147,7 +147,7 @@ footer {
     text-align: center;
     background: rgba(0, 0, 0, 0.35);
     height: 8vh;
-    width: 100vw;
+    width: 100%;
     padding-top: 0vh;
 }
 
