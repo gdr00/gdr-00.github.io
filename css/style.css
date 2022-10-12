@@ -102,29 +102,51 @@ section a:visited{
     color: #00aaff;
 }
 
-section#home {
-    background: linear-gradient(rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)),url(https://source.unsplash.com/wQLAGv4_OYs/1600x900) no-repeat center center/cover; /*Q1p7bh3SHj8*/
-}
-
 section#home p {
     align-items: center;
     text-align: center;
 }
 
-section#who-i-am {
+.webp section#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)),url(../images/background/landing.webp) no-repeat center center/cover; /*Q1p7bh3SHj8*/
+}
+
+.webp section#who-i-am {
+    background: url(../images/background/who-i-am.webp) no-repeat center center/cover;
+}
+
+.webp section#interests {
+    background: url(../images/background/interests.webp) no-repeat center center/cover;
+}
+
+.webp section#projects {
+    background: url(../images/background/projects.webp) no-repeat center center/cover;
+}
+
+.webp section#contact {
+    background: url(../images/background/contact.webp) no-repeat center center/cover;
+    scroll-snap-align: center;
+}
+
+.no-webp section#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)),url(https://source.unsplash.com/wQLAGv4_OYs/1600x900) no-repeat center center/cover; /*Q1p7bh3SHj8*/
+}
+
+.no-webp section#who-i-am {
     background: url(https://source.unsplash.com/pfR18JNEMv8/1600x900) no-repeat center center/cover;
 }
 
-section#interests {
+.no-webp section#interests {
     background: url(https://source.unsplash.com/Im7lZjxeLhg/1600x900) no-repeat center center/cover;
 }
 
-section#projects {
+.no-webp section#projects {
     background: url(https://source.unsplash.com/qtRF_RxCAo0/1600x900) no-repeat center center/cover; /*_8hGFBxWD0A*/
 }
 
-section#contact {
+.no-webp section#contact {
     background: url(https://source.unsplash.com/6SbFGnQTE8s/1600x900) no-repeat center center/cover;
     scroll-snap-align: center;
 }
