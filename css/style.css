@@ -84,14 +84,14 @@ section p {
     font-size: calc(12px + 0.5vw);
     margin: 0.14vh 5vw;
     padding: 0vmin;
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 section ul{
     font-size: calc(12px + 0.5vw);
     margin: 0vw 10vw;
     padding: 0vmin;
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 section a:link {
@@ -174,7 +174,7 @@ footer {
 p#designed-by {
     padding: 0vh 0rem;
     font-size: 1vh;
-    font-family: 'Pacifico', cursive;
+    font-family: Pacifico, cursive;
 }
 
 .socials{
@@ -209,7 +209,7 @@ p#designed-by {
         font-size: 1.5rem;
         text-align: center;
         margin: 1vmin;
-        font-family: 'kalam', cursive;
+        font-family: kalam, cursive;
     
     }
     
@@ -217,7 +217,7 @@ p#designed-by {
         font-size: 1.5rem;
         text-align: center;
         margin: 0.5rem 0rem;
-        font-family: 'kalam', cursive;
+        font-family: kalam, cursive;
     }
 
     .navbar {
@@ -228,7 +228,7 @@ p#designed-by {
         width: 100%;
         height: 33px;
         background: rgba(0, 0, 0, 0.65);
-        font-family: 'Roboto', sans-serif;
+        font-family: Roboto, sans-serif;
     }
     
     .navbar ul {
@@ -254,14 +254,14 @@ p#designed-by {
         font-size: 12px;
         margin: 0.14vh 5vw;
         padding: 0vmin;
-        font-family: 'Roboto', sans-serif;
+        font-family: Roboto, sans-serif;
     }
 
     section ul{
         font-size: 12px;
         margin: 0vw 10vw;
         padding: 0vmin;
-        font-family: 'Roboto', sans-serif;
+        font-family: Roboto, sans-serif;
     }
 }
 
@@ -271,7 +271,7 @@ p#designed-by {
         font-size: 1rem;
         text-align: center;
         margin: 0.6vmin;
-        font-family: 'kalam', cursive;
+        font-family: kalam, cursive;
     
     }
     
@@ -279,7 +279,7 @@ p#designed-by {
         font-size: 0.75rem;
         text-align: center;
         margin: 0.2rem 0rem;
-        font-family: 'kalam', cursive;
+        font-family: kalam, cursive;
     }
 
     .navbar {
@@ -290,7 +290,7 @@ p#designed-by {
         width: 100%;
         height: 27px;
         background: rgba(0, 0, 0, 0.65);
-        font-family: 'Roboto', sans-serif;
+        font-family: Roboto, sans-serif;
     }
     
     .navbar ul {
@@ -316,13 +316,13 @@ p#designed-by {
         font-size: 10px;
         margin: 0.14vh 5vw;
         padding: 0vmin;
-        font-family: 'Roboto', sans-serif;
+        font-family: Roboto, sans-serif;
     }
 
     section ul{
         font-size: 10px;
         margin: 0vw 10vw;
         padding: 0vmin;
-        font-family: 'Roboto', sans-serif;
+        font-family: Roboto, sans-serif;
     }
 }
