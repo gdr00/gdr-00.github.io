@@ -3,13 +3,19 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background: #222;
-    color: #fff;
-    line-height: 1.6;
-    height: 100vh;
-    overflow: hidden;
+:root {
+    --navbarbg: rgba(0, 0, 0, 0.65);
+    --footerbg: rgba(0, 0, 0, 0.35);
+    --txtnavhovercolor: #007cb0;
+    --txtcolor: #f1f1f1;
+    --linkcolor: #007cb0;
+    --linkvisited: #00aaff;
+    /*take the min from the min of vw, vh or 
+    if it is too big take the minumum of default text size*/
+    --globaltxtsize: min(min(1.5vh, 1.5vw), 1em);
+    --txtpsize: 1.2em;
+    --txth1size: 2.7em;
+    --txth2size: 2em;
 }
 
 .container {
@@ -27,8 +33,8 @@ body {
     z-index: 0;
     display: flex;
     width: 100%;
-    height: 60;
-    background: rgba(0, 0, 0, 0.65);
+    height: 3em;
+    background: var(--navbarbg);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -40,18 +46,40 @@ body {
 }
 
 .navbar ul li {
-    margin: 0 .4vw;
-    padding: .4vw;
+    margin-top: .2em;
+    padding: .4em;
+    font-size: 1.2em;
 }
 
 .navbar ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #f1f1f1;
+    color: var(--txtcolor);
 }
 
-.navbar ul li a:hover{
-    color: #007cb0;
+.navbar ul li a:hover {
+    color: var(--txtnavhovercolor);
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--globaltxtsize);
+    margin: auto;
+}
+
+/*
+---------------------
+        BODY
+---------------------
+*/
+
+body {
+    background: #222;
+    color: #fff;
+    line-height: 1.4em;
+    height: 100vh;
+    overflow: hidden;
 }
 
 section {
@@ -59,47 +87,32 @@ section {
     flex-direction: column;
     align-items: left;
     text-align: left;
-    justify-content: center; /*centra il contenuto nella sezione*/
+    justify-content: center;
     width: 100vw;
-    height: 100vh; /*fa in modo che ogni sezione in qualsiasi browser size occupi tutta la schermata*/
+    height: 100vh;
     scroll-snap-align: center;
 }
 
 section h1 {
-    font-size: 3rem;
+    font-size: var(--txth1size);
     text-align: center;
-    margin: 1vmin;
+    margin: .2em;
     font-family: 'kalam', cursive;
 
 }
 
 section h2 {
-    font-size: 2.3rem;
+    font-size: var(--txth2size);
     text-align: center;
-    margin: 0.5rem 0rem;
+    margin: 0.5em 0em;
     font-family: 'kalam', cursive;
 }
 
 section p {
-    font-size: calc(12px + 0.5vw);
-    margin: 0.14vh 5vw;
-    padding: 0vmin;
+    font-size: var(--txtpsize);
     font-family: 'Roboto', sans-serif;
-}
-
-section ul{
-    font-size: calc(12px + 0.5vw);
-    margin: 0vw 10vw;
-    padding: 0vmin;
-    font-family: 'Roboto', sans-serif;
-}
-
-section a:link {
-    color: #007cb0;
-}
-
-section a:visited{
-    color: #00aaff;
+    /*10% mobile*/
+    padding: 0em 20%;
 }
 
 section#home p {
@@ -107,9 +120,26 @@ section#home p {
     text-align: center;
 }
 
+section ul {
+    font-size: var(--txtpsize);
+    font-family: 'Roboto', sans-serif;
+    /*10% mobile*/
+    padding: 0em 20%;
+    margin-left: 2em;
+}
+
+section a:link {
+    color: var(--linkcolor);
+}
+
+section a:visited {
+    color: var(--linkvisited);
+}
+
 .webp section#home {
     background: linear-gradient(rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)),url(../images/background/landing.webp) no-repeat center center/cover; /*Q1p7bh3SHj8*/
+            rgba(0, 0, 0, 0.3)), url(../images/background/landing.webp) no-repeat center center/cover;
+    /*Q1p7bh3SHj8*/
 }
 
 .webp section#who-i-am {
@@ -131,7 +161,8 @@ section#home p {
 
 .no-webp section#home {
     background: linear-gradient(rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)),url(https://source.unsplash.com/wQLAGv4_OYs/1600x900) no-repeat center center/cover; /*Q1p7bh3SHj8*/
+            rgba(0, 0, 0, 0.3)), url(https://source.unsplash.com/wQLAGv4_OYs/1600x900) no-repeat center center/cover;
+    /*Q1p7bh3SHj8*/
 }
 
 .no-webp section#who-i-am {
@@ -143,7 +174,8 @@ section#home p {
 }
 
 .no-webp section#projects {
-    background: url(https://source.unsplash.com/qtRF_RxCAo0/1600x900) no-repeat center center/cover; /*_8hGFBxWD0A*/
+    background: url(https://source.unsplash.com/qtRF_RxCAo0/1600x900) no-repeat center center/cover;
+    /*_8hGFBxWD0A*/
 }
 
 .no-webp section#contact {
@@ -151,16 +183,19 @@ section#home p {
     scroll-snap-align: center;
 }
 
+/*
+----------------------
+        FOOTER
+----------------------
+*/
+
 footer {
     position: fixed;
-    right: 0;
-    left: 0;
     bottom: 0;
     text-align: center;
-    background: rgba(0, 0, 0, 0.35);
-    height: 8vh;
+    background: var(--footerbg);
+    height: 5em;
     width: 100%;
-    padding-top: 0vh;
 }
 
 .footer-contnent {
@@ -171,158 +206,81 @@ footer {
     text-align: center;
 }
 
-p#designed-by {
-    padding: 0vh 0rem;
-    font-size: 1vh;
-    font-family: 'Pacifico', cursive;
-}
-
-.socials{
+.socials {
     list-style: none;
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: center;
-    margin: 1vh 0 1vh 0; /*margin 1rem top 1rem bottom*/
+    margin-top: 1em;
 }
 
-.socials li{
-    margin: 0 2rem; /*margine di 1rem a dx e sx*/
+.socials li {
+    margin: 0 1em;
 }
 
-.socials a{
+.socials a {
     text-decoration: none;
     color: #007cb0;
-    padding: 1vh;
+    font-size: var(--txtpsize);
 }
 
-.socials a i{
-    font-size: 2vh;
-}
-
-.socials a:hover i{
+.socials a:hover {
     color: #fff;
 }
 
+p#designed-by {
+    font-size: 0.7em;
+    font-family: 'Pacifico', cursive;
+    margin-top: 0.5em;
+}
+
+/*
+----------------------
+        MOBILE
+----------------------
+*/
+
 @media screen and (max-width: 600px) {
-
-    section h1 {
-        font-size: 1.5rem;
-        text-align: center;
-        margin: 1vmin;
-        font-family: 'kalam', cursive;
-    
-    }
-    
-    section h2 {
-        font-size: 1.5rem;
-        text-align: center;
-        margin: 0.5rem 0rem;
-        font-family: 'kalam', cursive;
-    }
-
-    .navbar {
-        position: fixed;
-        top: 0;
-        z-index: 0;
-        display: flex;
-        width: 100%;
-        height: 33px;
-        background: rgba(0, 0, 0, 0.65);
-        font-family: 'Roboto', sans-serif;
-    }
-    
-    .navbar ul {
-        display: flex;
-        list-style: none;
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .navbar ul li {
-        margin: 0 .4vw;
-        padding: .4vw;
-    }
-    
-    .navbar ul li a {
-        font-size: 11px;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #f1f1f1;
-    }
-
     section p {
-        font-size: 12px;
-        margin: 0.14vh 5vw;
-        padding: 0vmin;
+        font-size: var(--txtpsize);
         font-family: 'Roboto', sans-serif;
+        /*10% mobile*/
+        padding: 0em 10%;
     }
 
-    section ul{
-        font-size: 12px;
-        margin: 0vw 10vw;
-        padding: 0vmin;
+    section#home p {
+        align-items: center;
+        text-align: center;
+    }
+
+    section ul {
+        font-size: var(--txtpsize);
         font-family: 'Roboto', sans-serif;
+        /*10% mobile*/
+        padding: 0em 10%;
+        margin-left: 2em;
     }
 }
 
 @media screen and (max-height: 600px) and (orientation: landscape) {
-
-    section h1 {
-        font-size: 1rem;
-        text-align: center;
-        margin: 0.6vmin;
-        font-family: 'kalam', cursive;
-    
-    }
-    
-    section h2 {
-        font-size: 0.75rem;
-        text-align: center;
-        margin: 0.2rem 0rem;
-        font-family: 'kalam', cursive;
-    }
-
-    .navbar {
-        position: fixed;
-        top: 0;
-        z-index: 0;
-        display: flex;
-        width: 100%;
-        height: 27px;
-        background: rgba(0, 0, 0, 0.65);
-        font-family: 'Roboto', sans-serif;
-    }
-    
-    .navbar ul {
-        display: flex;
-        list-style: none;
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .navbar ul li {
-        margin: 0 .4vw;
-        padding: .4vw;
-    }
-    
-    .navbar ul li a {
-        font-size: 9px;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #f1f1f1;
-    }
-
     section p {
-        font-size: 10px;
-        margin: 0.14vh 5vw;
-        padding: 0vmin;
+        font-size: var(--txtpsize);
         font-family: 'Roboto', sans-serif;
+        /*10% mobile*/
+        padding: 0em 20%;
     }
 
-    section ul{
-        font-size: 10px;
-        margin: 0vw 10vw;
-        padding: 0vmin;
+    section#home p {
+        align-items: center;
+        text-align: center;
+    }
+
+    section ul {
+        font-size: var(--txtpsize);
         font-family: 'Roboto', sans-serif;
+        /*10% mobile*/
+        padding: 0em 20%;
+        margin-left: 2em;
     }
 }
