@@ -7,25 +7,18 @@
     --navbarbg: rgba(0, 0, 0, 0.65);
     --footerbg: rgba(0, 0, 0, 0.35);
     --bodybgcolor: #222;
+    --bodylineheight: 1.6em;
     --txtnavhovercolor: #007cb0;
     --txtcolor: #f1f1f1;
     --linkcolor: #007cb0;
     --linkvisited: #00aaff;
+    --socialshovercolor: #fff;
     /*take the min from the min of vw, vh or 
     if it is too big take the minumum of default text size*/
     --globaltxtsize: min(min(1.5vh, 1.5vw), 1em);
     --txtpsize: 1.2em;
     --txth1size: 2.7em;
     --txth2size: 2em;
-}
-
-body {
-    font-family: Roboto, sans-serif;
-    background: var(--bodybgcolor);
-    color: var(--txtcolor);
-    line-height: 1.6;
-    height: 100vh;
-    overflow: hidden;
 }
 
 .container {
@@ -73,7 +66,7 @@ body {
 
 html,
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: var(--globaltxtsize);
     margin: auto;
 }
@@ -85,9 +78,9 @@ body {
 */
 
 body {
-    background: #222;
-    color: #fff;
-    line-height: 1.4em;
+    background: var(--bodybgcolor);
+    color: var(--txtcolor);
+    line-height: var(--bodylineheight);
     height: 100vh;
     overflow: hidden;
 }
@@ -107,19 +100,19 @@ section h1 {
     font-size: var(--txth1size);
     text-align: center;
     margin: .2em;
-    font-family: 'kalam', cursive;
+    font-family: Kalam, cursive;
 }
 
 section h2 {
     font-size: var(--txth2size);
     text-align: center;
     margin: 0.5em 0em;
-    font-family: 'kalam', cursive;
+    font-family: Kalam, cursive;
 }
 
 section p {
     font-size: var(--txtpsize);
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
     /*10% mobile*/
     padding: 0em 20%;
 }
@@ -131,7 +124,7 @@ section#home p {
 
 section ul {
     font-size: var(--txtpsize);
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
     /*10% mobile*/
     padding: 0em 20%;
     margin-left: 2em;
@@ -230,17 +223,17 @@ footer {
 
 .socials a {
     text-decoration: none;
-    color: #007cb0;
+    color: var(--linkcolor);
     font-size: var(--txtpsize);
 }
 
 .socials a:hover {
-    color: #fff;
+    color: var(--socialshovercolor);
 }
 
 p#designed-by {
     font-size: 0.7em;
-    font-family: 'Pacifico', cursive;
+    font-family: Pacifico, cursive;
     margin-top: 0.5em;
 }
 
@@ -251,21 +244,113 @@ p#designed-by {
 */
 
 @media screen and (max-width: 600px) {
-    section p {
-        font-size: var(--txtpsize);
-        font-family: 'Roboto', sans-serif;
+
+    .navbar {
+        height: 4em;
+    }
+
+    .navbar ul li {
+        margin-top: .2em;
+        padding: .4em;
+        font-size: 2em;
+    }
+
+    /*
+    ---------------------
+            BODY
+    ---------------------
+    */
+
+    body {
+        line-height: calc(var(--bodylineheight)*1.2);
+    }
+
+    section h1 {
+        font-size: calc(var(--txth1size)*1.1);
+        text-align: center;
+        margin: .2em;
+        font-family: Kalam, cursive;
+    }
+
+    section h2 {
+        font-size: calc(var(--txth2size)*1.2);
+        text-align: center;
+        margin: 0.5em 0em;
+        font-family: Kalam, cursive;
+    }
+
+    .container section p {
+        font-size: calc(var(--txtpsize)*1.5);
+        font-family: Roboto, sans-serif;
         /*10% mobile*/
         padding: 0em 10%;
     }
 
-    section#home p {
-        align-items: center;
+    .container section ul {
+        font-size: calc(var(--txtpsize)*1.5);
+        /*10% mobile*/
+        padding: 0em 10%;
+        margin-left: 2em;
+    }
+
+    /*
+    ----------------------
+            FOOTER
+    ----------------------
+    */
+
+    footer {
+        position: fixed;
+        bottom: 0;
         text-align: center;
+        background: var(--footerbg);
+        height: 6em;
+        width: 100%;
+    }
+
+    .footer-contnent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .socials {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+    .socials li {
+        margin: 0 1em;
+    }
+
+    .socials a {
+        text-decoration: none;
+        color: var(--linkcolor);
+        font-size: calc(var(--txtpsize)*1.6);
+    }
+
+    p#designed-by {
+        font-size: 1.1em;
+        font-family: Pacifico, cursive;
+        margin-top: 0.5em;
+    }
+
+    section p {
+        font-size: var(--txtpsize);
+        font-family: Roboto, sans-serif;
+        /*10% mobile*/
+        padding: 0em 10%;
     }
 
     section ul {
         font-size: var(--txtpsize);
-        font-family: 'Roboto', sans-serif;
+        font-family: Roboto, sans-serif;
         /*10% mobile*/
         padding: 0em 10%;
         margin-left: 2em;
@@ -273,23 +358,111 @@ p#designed-by {
 }
 
 @media screen and (max-height: 600px) and (orientation: landscape) {
-    section p {
-        font-size: var(--txtpsize);
-        font-family: 'Roboto', sans-serif;
-        /*10% mobile*/
-        padding: 0em 20%;
+    .navbar {
+        height: 4em;
     }
 
-    section#home p {
-        align-items: center;
+    .navbar ul li {
+        margin-top: .2em;
+        padding: .4em;
+        font-size: 2em;
+    }
+
+    /*
+    ---------------------
+            BODY
+    ---------------------
+    */
+
+    section h1 {
+        font-size: var(--txth1size);
         text-align: center;
+        margin: .2em;
+        font-family: Kalam, cursive;
+    }
+
+    section h2 {
+        font-size: var(--txth2size);
+        text-align: center;
+        margin: 0.5em 0em;
+        font-family: Kalam, cursive;
+    }
+
+    section p {
+        font-size: var(--txtpsize);
+        font-family: Roboto, sans-serif;
+        /*10% mobile*/
+        padding: 0em 20%;
     }
 
     section ul {
         font-size: var(--txtpsize);
-        font-family: 'Roboto', sans-serif;
+        font-family: Roboto, sans-serif;
         /*10% mobile*/
         padding: 0em 20%;
+        margin-left: 2em;
+    }
+
+    /*
+    ----------------------
+            FOOTER
+    ----------------------
+    */
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        background: var(--footerbg);
+        height: 6em;
+        width: 100%;
+    }
+
+    .footer-contnent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .socials {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+    .socials li {
+        margin: 0 1em;
+    }
+
+    .socials a {
+        text-decoration: none;
+        color: var(--linkcolor);
+        font-size: calc(var(--txtpsize)*1.6);
+    }
+
+    p#designed-by {
+        font-size: 1.1em;
+        font-family: Pacifico, cursive;
+        margin-top: 0.5em;
+    }
+
+    section p {
+        font-size: var(--txtpsize);
+        font-family: Roboto, sans-serif;
+        /*10% mobile*/
+        padding: 0em 10%;
+    }
+
+    section ul {
+        font-size: var(--txtpsize);
+        font-family: Roboto, sans-serif;
+        /*10% mobile*/
+        padding: 0em 10%;
         margin-left: 2em;
     }
 }
