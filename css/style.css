@@ -80,7 +80,7 @@ body {
 body {
     background: var(--bodybgcolor);
     color: var(--txtcolor);
-    line-height: var(--bodylineheight);
+    line-height: calc(var(--bodylineheight)*1.2);
     height: 100vh;
     overflow: hidden;
 }
@@ -97,21 +97,21 @@ section {
 }
 
 section h1 {
-    font-size: var(--txth1size);
+    font-size: calc(var(--txth1size)*1.2);
     text-align: center;
     margin: .2em;
     font-family: Kalam, cursive;
 }
 
 section h2 {
-    font-size: var(--txth2size);
+    font-size: calc(var(--txth2size)*1.2);
     text-align: center;
     margin: 0.5em 0em;
     font-family: Kalam, cursive;
 }
 
 section p {
-    font-size: var(--txtpsize);
+    font-size: calc(var(--txtpsize)*1.2);
     font-family: Roboto, sans-serif;
     /*10% mobile*/
     padding: 0em 20%;
@@ -123,7 +123,7 @@ section#home p {
 }
 
 section ul {
-    font-size: var(--txtpsize);
+    font-size: calc(var(--txtpsize)*1.2);
     font-family: Roboto, sans-serif;
     /*10% mobile*/
     padding: 0em 20%;
