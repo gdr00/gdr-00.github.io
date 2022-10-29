@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://www.gdr00.it/index.html</loc>
+    <loc>http://www.gdr00.it/</loc>
     <lastmod>2022-10-28</lastmod>
   </url>
   <url>
-    <loc>http://www.gdr00.it/index.html#home</loc>
+    <loc>http://www.gdr00.it/#home</loc>
     <lastmod>2022-10-28</lastmod>
   </url>
   <url>
-    <loc>http://www.gdr00.it/index.html#who-i-am</loc>
+    <loc>http://www.gdr00.it/#who-i-am</loc>
     <lastmod>2022-10-28</lastmod>
   </url>
   <url>
-    <loc>http://www.gdr00.it/index.html#interests</loc>
+    <loc>http://www.gdr00.it/#interests</loc>
     <lastmod>2022-10-28</lastmod>
   </url>
   <url>
-    <loc>http://www.gdr00.it/index.html#projects</loc>
+    <loc>http://www.gdr00.it/#projects</loc>
     <lastmod>2022-10-28</lastmod>
   </url>
   <url>
-    <loc>http://www.gdr00.it/index.html#contact</loc>
+    <loc>http://www.gdr00.it/#contact</loc>
     <lastmod>2022-10-28</lastmod>
   </url>
 </urlset>
