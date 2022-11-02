@@ -267,12 +267,10 @@ p#designed-by {
 
     section h1 {
         font-size: calc(var(--txth1size)*1.1);
-        margin: .2em;
     }
 
     section h2 {
         font-size: calc(var(--txth2size)*1.2);
-        margin: 0.5em 0em;
     }
 
     section p {
@@ -340,12 +338,10 @@ p#designed-by {
 
     section h1 {
         font-size: calc(var(--txth1size)*1.1);
-        margin: .2em;
     }
 
     section h2 {
         font-size: calc(var(--txth2size)*1.2);
-        margin: 0.5em 0em;
     }
 
     section p {
