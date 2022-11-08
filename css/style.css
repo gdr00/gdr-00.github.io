@@ -10,8 +10,9 @@
     --bodylineheight: 1.6em;
     --txtnavhovercolor: #007cb0;
     --txtcolor: #f1f1f1;
-    --linkcolor: #007cb0;
-    --linkvisited: #00aaff;
+    --linkcolor: rgb(255, 145, 0);
+    --linkvisited: rgb(255, 196, 0);
+    --socialslinkcolor: #007cb0;
     --socialshovercolor: #fff;
     /*take the min from the min of vw, vh or 
     if it is too big take the minumum of default text size*/
@@ -222,7 +223,7 @@ footer {
 
 .socials a {
     text-decoration: none;
-    color: var(--linkcolor);
+    color: var(--socialslinkcolor);
     font-size: var(--txtpsize);
 }
 
