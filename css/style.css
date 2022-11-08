@@ -233,7 +233,7 @@ footer {
 p#designed-by {
     font-size: 0.7em;
     font-family: Pacifico, cursive;
-    margin-top: 0.5em;
+    margin: 0em;
 }
 
 /*
@@ -293,7 +293,6 @@ p#designed-by {
 
     footer {
         height: 6em;
-        width: 100%;
     }
 
     .socials {
@@ -310,7 +309,7 @@ p#designed-by {
 
     p#designed-by {
         font-size: 1.1em;
-        margin-top: 0.2em;
+        margin: 0em;
     }
 }
 
@@ -364,7 +363,6 @@ p#designed-by {
 
     footer {
         height: 6em;
-        width: 100%;
     }
 
     .socials {
