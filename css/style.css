@@ -208,6 +208,10 @@ section a:visited {
     display: none;
 }
 
+.mySlides:first-child {
+    display: block;
+}
+
 .mySlides img {
     max-width: 100%;
     border-radius: 2em;
