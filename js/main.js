@@ -3,7 +3,8 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    slideIndex += n;
+    showSlides(slideIndex);
 }
 
 // Thumbnail image controls

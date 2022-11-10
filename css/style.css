@@ -20,7 +20,8 @@
     --txtpsize: 1.4em;
     --txth1size: 3.2em;
     --txth2size: 2.9em;
-    --txtSlCapSize: 1em;
+    --txtSlCapSize: 1.2em;
+    --txtSlNumberSize: 1em;
 }
 
 .container {
@@ -192,6 +193,11 @@ section a:visited {
 ----------------------
 */
 
+.slideObjContainer {
+    max-width: 70%;
+    margin-left: 15%;
+}
+
 .slideshow-container {
     max-width: 1024px;
     position: relative;
@@ -200,6 +206,11 @@ section a:visited {
 
 .mySlides {
     display: none;
+}
+
+.mySlides img {
+    max-width: 100%;
+    border-radius: 2em;
 }
 
 .prev,
@@ -230,7 +241,7 @@ section a:visited {
 
 .text {
     color: #f2f2f2;
-    font-size: 15px;
+    font-size: var(--txtSlCapSize);
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
@@ -240,10 +251,11 @@ section a:visited {
 
 .numbertext {
     color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
+    font-size: var(--txtSlNumberSize);
+    padding: .5em 1em;
     position: absolute;
     top: 0;
+    left: 0;
 }
 
 .dots {
@@ -252,8 +264,8 @@ section a:visited {
 
 .dot {
     cursor: pointer;
-    height: 1.3em;
-    width: 1.3em;
+    height: 1em;
+    width: 1em;
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
