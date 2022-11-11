@@ -246,8 +246,10 @@ section a:visited {
 }
 
 .text {
-    color: #ffffff;
+    -webkit-text-stroke: .1px rgb(255, 0, 0);
+    color: black;
     font-size: var(--txtSlCapSize);
+    font-weight: bold;
     padding: .5em 0em;
     position: absolute;
     bottom: 1em;
