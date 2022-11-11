@@ -246,13 +246,13 @@ section a:visited {
 }
 
 .text {
-    color: #f2f2f2;
+    color: #ffffff;
     font-size: var(--txtSlCapSize);
     padding: .5em 0em;
     position: absolute;
     bottom: 1em;
-    left: 0;
-    width: 100%;
+    left: 5%;
+    width: 90%;
     text-align: center;
 }
 
@@ -520,7 +520,7 @@ p#designed-by {
     }
 
     .text {
-        font-size: calc(var(--txtSlCapSize)*1.5);
+        font-size: calc(var(--txtSlCapSize)*1.3);
         padding: .5em 0em;
         position: absolute;
         bottom: .5em;
