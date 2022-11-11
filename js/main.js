@@ -1,7 +1,8 @@
+let slideIndex = 1;
+
 // Next/previous controls
 function plusSlides(n) {
-    slideIndex += n;
-    showSlides(slideIndex);
+    showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
