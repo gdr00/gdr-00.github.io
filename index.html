@@ -96,45 +96,47 @@
                 printers to improve them; if you have my same interests we might meet to share them!</p>
         </section>
         <section id="projects">
-            <h2>My Projects</h2>
-            <div class="slideObjContainer">
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 4</div>
-                        <img src="images/slides/slide-1.jpg" alt="Printer I developed basing on BLV mgn 12 project">
-                        <div class="text"><span>My custom built 3D printer. Derived from BLV MGN12</span></div>
+            <div class="projectsContainer">
+                <h2>My Projects</h2>
+                <div>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="images/slides/slide-1.jpg" alt="Printer I developed basing on BLV mgn 12 project">
+                            <div class="text"><span>My custom built 3D printer. Derived from BLV MGN12</span></div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="images/slides/slide-2.jpg"
+                                alt="3D printer project done in stage previous wire management">
+                            <div class="text"><span>3D printer project <em>before</em> management</span></div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="images/slides/slide-3.jpg"
+                                alt="3D printer project done in stage after wire management">
+                            <div class="text"><span>3D printer project <em>after</em> management</span></div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="images/slides/slide-4.jpg" alt="3D printer project Marlin ramps conversion">
+                            <div class="text"><span>3D printer <em>after</em> Marlin ramps conversion</span></div>
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)" role="button">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)" role="button">&#10095;</a>
                     </div>
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 4</div>
-                        <img src="images/slides/slide-2.jpg"
-                            alt="3D printer project done in stage previous wire management">
-                        <div class="text"><span>3D printer project <em>before</em> management</span></div>
-                    </div>
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 4</div>
-                        <img src="images/slides/slide-3.jpg"
-                            alt="3D printer project done in stage after wire management">
-                        <div class="text"><span>3D printer project <em>after</em> management</span></div>
-                    </div>
-                    <div class="mySlides fade">
-                        <div class="numbertext">4 / 4</div>
-                        <img src="images/slides/slide-4.jpg" alt="3D printer project Marlin ramps conversion">
-                        <div class="text"><span>3D printer <em>after</em> Marlin ramps conversion</span></div>
-                    </div>
-                    <a class="prev" onclick="plusSlides(-1)" role="button">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)" role="button">&#10095;</a>
-                </div>
 
-                <div class="dots">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <div class="dots">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                    <script>
+                        let slideIndex = 1;
+                        showSlides(slideIndex);
+                    </script>
                 </div>
-                <script>
-                    let slideIndex = 1;
-                    showSlides(slideIndex);
-                </script>
             </div>
 
         </section>
